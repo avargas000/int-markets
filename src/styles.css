@@ -2,3 +2,8 @@
   font-family: sans-serif;
   text-align: center;
 }
+
+.navContainer {
+  display: flex;
+  border: solid 1px red;
+}
