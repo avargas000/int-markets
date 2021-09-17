@@ -1,5 +1,21 @@
 import "./styles.css";
 
+const marketData = {
+  US: {
+    header: "",
+    body: ""
+  },
+  MX: {
+    header: "",
+    body: ""
+  },
+  CA: {
+    header: "",
+    body: "",
+    supplemental: ""
+  }
+};
+
 export default function App() {
   return (
     <div className="App">
