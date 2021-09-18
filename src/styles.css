@@ -1,9 +1,100 @@
 .App {
   font-family: sans-serif;
-  text-align: center;
+  background-color: gainsboro;
+  height: 100vh;
+}
+/* //GLOBAL STYLES */
+.bannerContainer {
+  text-align: left;
+  flex: 1;
+  align-self: center;
 }
 
-.navContainer {
+span {
+  font-size: 10px;
+  font-style: italic;
+}
+.imgCont {
+  flex: 2;
+}
+.outterContainer {
+  margin-top: 20px;
+  background-color: white;
+  padding: 30px;
   display: flex;
-  border: solid 1px red;
+  flex-direction: column;
+}
+
+img {
+  width: 100%;
+}
+
+@media only screen and (min-width: 768px) {
+  img {
+    width: 100%;
+    height: 100%;
+  }
+  .imgCont {
+    flex: 1;
+  }
+  .outterContainer {
+    flex-direction: row;
+  }
+
+  .defaultOutterContainer {
+    flex-direction: column;
+  }
+}
+/* ///market specific styles (used when they have 3 different layouts) */
+.usBannerContainer {
+  padding: 30px;
+  text-align: left;
+  flex: 1;
+  align-self: center;
+}
+
+.mexicoOutterContainer {
+  display: flex;
+  flex-direction: column;
+  width: 400px;
+}
+.mexicoBannerContainer {
+  padding: 30px;
+  color: crimson;
+  text-align: left;
+  flex: 3;
+  align-self: center;
+  margin-top: -5px;
+  background-color: white;
+}
+
+.canadaBannerContainer {
+  text-align: right;
+  flex: 2;
+  padding: 30px;
+}
+
+.canadaOutterContainer {
+  margin-top: 20px;
+  background-color: white;
+  padding: 30px;
+  display: flex;
+  max-width: 400px;
+  flex-direction: column;
+}
+/* ///2 different styling versions */
+
+.defaultOutterContainer {
+  margin-top: 20px;
+  background-color: white;
+  padding: 30px;
+  display: flex;
+  flex-direction: row;
+}
+
+.defaultBannerContainer {
+  padding: 30px;
+  text-align: left;
+  flex: 1;
+  align-self: center;
 }

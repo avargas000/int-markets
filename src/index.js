@@ -1,12 +1,16 @@
 import { StrictMode } from "react";
 import ReactDOM from "react-dom";
 
-import App from "./App";
+import ThreeVariation from "./ThreeVariation";
+import TwoVariation from "./TwoVariation";
 
 const rootElement = document.getElementById("root");
 ReactDOM.render(
   <StrictMode>
-    <App />
+    {/* // component with many different style usecases */}
+    {/* <ThreeVariation /> */}
+    {/* // component with many different style usecase */}
+    <TwoVariation />
   </StrictMode>,
   rootElement
 );
